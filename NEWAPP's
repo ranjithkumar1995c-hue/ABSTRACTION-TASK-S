@@ -39,3 +39,50 @@ Payment done successfully....
 ================
 Amount paid by creditcard:1000.0
 Payment done successfully....
+package Abstractiontasks;
+// Task No:1
+//A zoo application should define an animal concept but allow each animal to implement its own sound behavior.
+
+ abstract  class zootask {
+	 abstract void animal(String sound);
+	 void disp() {
+		 System.out.println("All animal sound difference");
+	 }
+ }
+	 class Lion extends zootask{
+
+		@Override
+		void animal(String sound) {
+			System.out.println("lion animal sound:"+sound);
+			
+			
+		}
+		 
+	 }
+class dog extends zootask{
+
+	@Override
+	void animal(String sound) {
+		System.out.println("dog animal sound :"+sound);
+		
+		
+	}
+	
+}
+    public class abstractzootask{
+	public static void main(String[] args) {
+		Lion l=new Lion();
+		l.animal("roar");
+		dog d=new dog();
+		d.animal("barking");
+		System.out.println("==================");
+	
+		d.disp();
+	}
+		
+
+	}
+(OUTPUT)=>lion animal sound:roar
+dog animal sound :barking
+==================
+All animal sound difference
