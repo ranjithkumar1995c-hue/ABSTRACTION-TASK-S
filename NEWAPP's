@@ -1,1 +1,36 @@
+package Abstractiontasks;
+//Task No:5
+//A payment system should allow different implementations such as credit card or UPI.
+ abstract class payment{
+	abstract void pay(double amt);
+	void disp() {
+		System.out.println("Payment done successfully....");
+	}
+}
+class upi extends payment{
+	@Override
+	void pay(double amt) {
+		System.out.println("Amount paid by upi:RS"+amt);
+	}
+}
+class creditcard extends payment{
+	@Override
+	void pay(double amt) {
+		System.out.println("Amount paid by creditcard:"+amt);
+		
+	}	
+	}
+	
+    public class abstractclasspayment{
+	public static void main(String[] args) {
+		upi u=new upi();
+		u.pay(7000);
+		creditcard cd=new creditcard();
+		u.disp();
+		System.out.println("================");
+		cd.pay(1000);
+		cd.disp();
+		
+
+	}}
 
