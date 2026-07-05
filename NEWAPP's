@@ -34,3 +34,8 @@ class creditcard extends payment{
 
 	}}
 
+(O.P)=>Amount paid by upi:RS7000.0
+Payment done successfully....
+================
+Amount paid by creditcard:1000.0
+Payment done successfully....
