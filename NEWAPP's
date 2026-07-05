@@ -86,3 +86,41 @@ class dog extends zootask{
 dog animal sound :barking
 ==================
 All animal sound difference
+package Abstractiontasks;
+// Task No:3
+//A vehicle control system should define common vehicle operations but allow different implementations.
+ interface vehicle {
+	 void  vehiclecommon();
+ }
+ class rollsroyce implements vehicle{
+	 @Override
+		public void vehiclecommon() {
+		 System.out.println("vehicle implements on rollsroyce jan-2026 launch");
+			
+			
+		}
+	 
+ }
+ class Toyotahybrid implements vehicle{
+
+	@Override
+	public void vehiclecommon() {
+		System.out.println("vehicle implements on Toyatahybrid Mar-2026 launch");
+		
+	}
+	 
+ }
+    class interfacevehicle{
+	public static void main(String[] args) {
+		rollsroyce r =new rollsroyce();
+		r.vehiclecommon();
+		System.out.println(" vehicle launched customer purchase feb 2026 ");
+		Toyotahybrid t=new Toyotahybrid();
+		t.vehiclecommon();
+		System.out.println("vehicle launched customer purchase feb 2026 ");
+
+	}}
+(OUTPUT)=>vehicle implements on rollsroyce jan-2026 launch
+ vehicle launched customer purchase feb 2026 
+vehicle implements on Toyatahybrid Mar-2026 launch
+vehicle launched customer purchase feb 2026 
