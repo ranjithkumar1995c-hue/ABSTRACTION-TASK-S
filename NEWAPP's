@@ -407,5 +407,50 @@ package Abstractiontasks;
 (OUTPUT)=>pentagonal are shape :6 point shape
 All shape are different method
 square shape point shape:3 point shape.
+package Abstractiontasks;
+//Task No:10
+//A device system should define common device operations.
+abstract class devicetask {
+	abstract void voice(String sound);
+	void disp() {
+		System.out.println("All device sound are different...");
+		
+	}
+}
+class radio extends devicetask{
+
+	@Override
+	void voice(String sound) {
+		System.out.println("Radio ON/OFF Format be:"+sound);
+		
+	}
+	
+}
+class TV extends devicetask{
+
+	@Override
+	void voice(String sound) {
+		System.out.println("TV ON/OFF Format be:"+sound);
+		
+	}
+	
+}
+	 
+    public class abstractdevicetask{
+	public static void main(String[] args) {
+		radio r=new radio();
+		r.voice("common run process");
+		r.disp();
+		TV T=new TV();
+		T.voice("common run process");
+
+	}
+
+}
+(Output)=>Radio ON/OFF Format be:common run process.
+All device sound are different...
+TV ON/OFF Format be:common run process.
+
+
 
 
