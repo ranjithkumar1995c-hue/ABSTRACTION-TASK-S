@@ -172,3 +172,51 @@ A company payment credited your A/C....
 ================
 Amount credited By Employee A/C Rs:10000
 A company payment credited your A/C....
+
+package Abstractiontasks;
+//Task No:9
+//A transport system should define basic vehicle behavior abstractly.
+abstract class vehicletask {
+	abstract void capacity(String weight);
+	void disp() {
+		System.out.println("The Transport vehicle Lanuch Sucessfully");
+		
+	}}
+class LCV extends vehicletask{
+
+	@Override
+	void capacity(String weight) {
+		System.out.println("The LCV gross capacity ton:"+weight);
+		
+	}
+	
+}
+class MHCV extends vehicletask{
+
+	@Override
+	void capacity(String weight) {
+		System.out.println("The MHCV gross capacity ton:"+weight);	
+		
+	}
+	
+}
+
+	
+    public class abstractvehicletask{
+	public static void main(String[] args) {
+		LCV l =new LCV();
+		l.capacity("3.5T to 7T");
+		l.disp();
+		System.out.println("================");
+		MHCV m=new MHCV();
+		m.capacity("19T to 55T");
+		m.disp();
+
+	}
+
+}
+(o.p)=>The LCV gross capacity ton:3.5T to 7T
+The Transport vehicle Lanuch Sucessfully
+================
+The MHCV gross capacity ton:19T to 55T
+The Transport vehicle Lanuch Sucessfully
