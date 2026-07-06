@@ -360,6 +360,52 @@ class circle extends areatasks{
 (OUTPUT)=>The rectangular parameter is22500
 The circle parameter is6358
 ==============
-All Shape are difference format
+All Shape are difference format.
+
+package Abstractiontasks;
+// Task No:8
+//A drawing application should define a draw method for shapes.
+ abstract class drawingtask {
+	 abstract void shape(String shape);
+	 void disp() {
+		 System.out.println("All shape are different method");
+	 }
+ }
+ class pentagonal extends drawingtask{
+
+	@Override
+	void shape(String shape) {
+		System.out.println("pentagonal are shape :"+shape);
+		
+		
+	}
+	 
+ }
+ class square extends drawingtask{
+
+	@Override
+	void shape(String shape) {
+	System.out.println("square shape point shape:"+shape);
+		
+	}
+	 
+ }
+ 
+    public class abstractdrawingtask{
+	public static void main(String[] args) {
+		pentagonal r =new pentagonal();
+		r.shape("6 point shape");
+		r.disp();
+		
+		square s=new square();
+		s.shape("3 point shape");
+		
+
+	}
+
+}
+(OUTPUT)=>pentagonal are shape :6 point shape
+All shape are different method
+square shape point shape:3 point shape.
 
 
