@@ -124,3 +124,51 @@ package Abstractiontasks;
  vehicle launched customer purchase feb 2026 
 vehicle implements on Toyatahybrid Mar-2026 launch
 vehicle launched customer purchase feb 2026 
+
+package Abstractiontasks;
+//Task No:4
+//A company payroll system should define salary calculation abstractly.
+ abstract  class payrolltask {
+	 abstract void salary(long salary);
+	 void disp() {
+		 System.out.println("A company payment credited your A/C....");
+ }
+ }
+class manager extends payrolltask{
+
+	@Override
+	void salary(long salary) {
+	System.out.println("Amount credited By Manager A/C Rs:"+salary);	
+		
+	}
+	
+}
+class employee extends payrolltask{
+
+	@Override
+	void salary(long salary) {
+		System.out.println("Amount credited By Employee A/C Rs:"+salary);	
+		
+	}
+	
+}
+	public class abstractpayrolltask{
+	public static void main(String[] args) {
+		manager m=new manager();
+		m.salary(25000);
+		m.disp();
+		employee e=new employee();
+		e.salary(10000);
+		e.disp();
+		System.out.println("================");
+		
+		
+
+	}
+
+}
+(o.p)=>Amount credited By Manager A/C Rs:25000
+A company payment credited your A/C....
+================
+Amount credited By Employee A/C Rs:10000
+A company payment credited your A/C....
