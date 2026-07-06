@@ -304,3 +304,62 @@ package Abstractiontasks;
 saving account process completed.
 Current account minimum balance Rs-2500
 Current account process completed.
+
+package Abstractiontasks;
+//Task No:2
+//A graphics system should define a shape but let each shape calculate its own area.
+// int l;
+// int b;
+// int r;
+
+abstract class areatasks{
+	int l;
+	int b;
+	int r;
+	 
+	 
+	 abstract void area(int a,int b);
+	 void disp() {
+		 System.out.println("All Shape are difference format");
+		 
+	 }
+ }
+class rectangular extends areatasks{
+
+	@Override
+	void area(int L,int b ){
+		
+		
+		System.out.println("The rectangular parameter is"+(L*b));
+		
+	}
+}
+class circle extends areatasks{
+	int r;
+
+	@Override
+	void area(int r,int b) 
+	{ 
+		b=1;
+		int area=(int)(3.14*r*r*b);
+		System.out.println("The circle parameter is"+area);
+		
+	}
+	
+	
+}
+	class abstractareatasks{
+	public static void main(String[] args) {
+		rectangular r=new rectangular();
+		r.area(50, 450);
+		circle c=new circle();
+		c.area(45, 1);
+        System.out.println("==============");
+        c.disp();
+	}}
+(OUTPUT)=>The rectangular parameter is22500
+The circle parameter is6358
+==============
+All Shape are difference format
+
+
