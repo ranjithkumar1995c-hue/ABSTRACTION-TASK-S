@@ -220,3 +220,45 @@ The Transport vehicle Lanuch Sucessfully
 ================
 The MHCV gross capacity ton:19T to 55T
 The Transport vehicle Lanuch Sucessfully
+package Abstractiontasks;
+//Task No:6
+//A smart home system should define a device interface for appliances.
+ interface  hometask {
+	 void smarthome();
+ }
+ class kitchen implements hometask{
+
+	@Override
+	public void smarthome() {
+		System.out.println("kitchen work start at (6to7)Am");
+		
+	}
+	 
+ }
+	class vesselwashing implements hometask{
+
+		@Override
+		public void smarthome() {
+			
+		System.out.println("vesselwashing work start at (7 to 8)Am");	
+		}
+		
+	}
+    public class interfacehometask{
+	public static void main(String[] args) {
+		kitchen k = new kitchen();
+		k.smarthome();
+		System.out.println("Kitchen work completed ");
+		vesselwashing v=new vesselwashing();
+		v.smarthome();
+		System.out.println("vesselwashing work completed");
+		
+		
+
+	}
+
+}
+(OUTPUT)=>kitchen work start at (6to7)Am
+Kitchen work completed. 
+vesselwashing work start at (7 to 8)Am
+vesselwashing work completed.
