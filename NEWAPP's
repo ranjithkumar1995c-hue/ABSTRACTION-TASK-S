@@ -262,3 +262,45 @@ package Abstractiontasks;
 Kitchen work completed. 
 vesselwashing work start at (7 to 8)Am
 vesselwashing work completed.
+
+package Abstractiontasks;
+//Task No:7
+//A bank system should define general account operations but let specific accounts implement them.
+
+ interface  banktask {
+	 void specific();
+ }
+ class savingaccount implements banktask{
+
+	@Override
+	public void specific() {
+	System.out.println("saving account minimum balance Rs-1000.");	
+		
+	}
+	 
+ }
+ class currentaccount implements banktask{
+
+	@Override
+	public void specific() {
+		System.out.println("Current account minimum balance Rs-2500");
+		
+	}
+	 
+ }
+    public class interfacebanktask{
+	public static void main(String[] args) {
+		savingaccount s =new savingaccount();
+		s.specific();
+		System.out.println("saving account process completed.");
+		currentaccount c=new currentaccount();
+		c.specific();
+		System.out.println("Current account process completed");
+
+	}
+
+}
+(OUTPUT)-saving account minimum balance Rs-1000.
+saving account process completed.
+Current account minimum balance Rs-2500
+Current account process completed.
